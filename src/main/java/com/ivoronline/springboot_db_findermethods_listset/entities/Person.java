@@ -1,7 +1,6 @@
 package com.ivoronline.springboot_db_findermethods_listset.entities;
 
 import lombok.Getter;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

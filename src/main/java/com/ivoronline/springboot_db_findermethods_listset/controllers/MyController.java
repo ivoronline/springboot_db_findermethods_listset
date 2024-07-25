@@ -71,7 +71,7 @@ public class MyController {
   @RequestMapping("getMap")
   Collection<Person> getMap() throws JsonProcessingException {
 
-    //GET RECORDS
+    //GET RECORDS INTO MAP
     List<Integer> ids = List.of(1, 3, 4);
     List<Person>  personList = personRepository.findAllById(ids);
     Map<Integer, Person> persons = personList.stream().collect(Collectors.toMap(Person::getId, Function.identity()));
